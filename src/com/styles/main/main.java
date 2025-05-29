@@ -46,8 +46,8 @@ public class main extends javax.swing.JFrame {
 
         btnStepByStep.setVisible(false);
         jLabel10.setVisible(false);
-        jPanelFondo.setBackground(new Color(52, 73, 85));
-        jPanelGeneral.setBackground(new Color(52, 73, 85));
+        //jPanelFondo.setBackground(new Color(52, 73, 85));
+        //jPanelGeneral.setBackground(new Color(52, 73, 85));
     }
 
          public static String generarNumeroBinario() {
@@ -208,13 +208,11 @@ public class main extends javax.swing.JFrame {
         jTFintrucComp = new javax.swing.JTextField();
         jLabel12 = new javax.swing.JLabel();
         btnExe = new javax.swing.JButton();
-        jLabel10 = new javax.swing.JLabel();
         btnShowCodops = new javax.swing.JButton();
         jScrollPane4 = new javax.swing.JScrollPane();
         txtResult = new javax.swing.JTextArea();
         jLabel15 = new javax.swing.JLabel();
         btnRestart = new javax.swing.JButton();
-        btnStepByStep = new javax.swing.JButton();
         jPanelMemoria = new javax.swing.JPanel();
         listRegistros2 = new java.awt.List();
         filler3 = new javax.swing.Box.Filler(new java.awt.Dimension(0, 0), new java.awt.Dimension(0, 0), new java.awt.Dimension(0, 32767));
@@ -250,10 +248,13 @@ public class main extends javax.swing.JFrame {
         jLabel11 = new javax.swing.JLabel();
         jScrollPane3 = new javax.swing.JScrollPane();
         jTFmemoria = new javax.swing.JTextArea();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        btnStepByStep = new javax.swing.JButton();
+        jLabel10 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
-        setPreferredSize(new java.awt.Dimension(1280, 720));
         setSize(new java.awt.Dimension(1280, 720));
 
         jPanelGeneral.setBackground(new java.awt.Color(255, 255, 255));
@@ -271,7 +272,7 @@ public class main extends javax.swing.JFrame {
             .addGap(0, 0, Short.MAX_VALUE)
         );
 
-        jPanelFondo.setBackground(new java.awt.Color(52, 73, 85));
+        jPanelFondo.setBackground(new java.awt.Color(128, 175, 129));
         jPanelFondo.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
         jPanelFondo.setPreferredSize(new java.awt.Dimension(1300, 768));
 
@@ -280,10 +281,9 @@ public class main extends javax.swing.JFrame {
         jTFintrucComp.setFont(new java.awt.Font("Calibri", 0, 16)); // NOI18N
 
         jLabel12.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
         jLabel12.setText("Resultado");
 
-        btnExe.setBackground(new java.awt.Color(13, 110, 253));
+        btnExe.setBackground(new java.awt.Color(26, 83, 25));
         btnExe.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         btnExe.setForeground(new java.awt.Color(255, 255, 255));
         btnExe.setText("Ejecutar");
@@ -293,12 +293,7 @@ public class main extends javax.swing.JFrame {
             }
         });
 
-        jLabel10.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel10.setText("Captación:");
-        jLabel10.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-
-        btnShowCodops.setBackground(new java.awt.Color(13, 110, 253));
+        btnShowCodops.setBackground(new java.awt.Color(26, 83, 25));
         btnShowCodops.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         btnShowCodops.setForeground(new java.awt.Color(255, 255, 255));
         btnShowCodops.setText("Mostrar codops");
@@ -314,12 +309,12 @@ public class main extends javax.swing.JFrame {
         txtResult.setRows(5);
         jScrollPane4.setViewportView(txtResult);
 
+        jLabel15.setBackground(new java.awt.Color(0, 0, 0));
         jLabel15.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
-        jLabel15.setForeground(new java.awt.Color(255, 255, 255));
         jLabel15.setText("Ingrese la Instruccion a Ejecutar:");
         jLabel15.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
-        btnRestart.setBackground(new java.awt.Color(13, 110, 253));
+        btnRestart.setBackground(new java.awt.Color(26, 83, 25));
         btnRestart.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         btnRestart.setForeground(new java.awt.Color(255, 255, 255));
         btnRestart.setText("Reiniciar");
@@ -329,22 +324,7 @@ public class main extends javax.swing.JFrame {
             }
         });
 
-        btnStepByStep.setBackground(new java.awt.Color(13, 110, 253));
-        btnStepByStep.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
-        btnStepByStep.setForeground(new java.awt.Color(255, 255, 255));
-        btnStepByStep.setText("Paso a Paso");
-        btnStepByStep.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnStepByStepMouseClicked(evt);
-            }
-        });
-        btnStepByStep.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnStepByStepActionPerformed(evt);
-            }
-        });
-
-        jPanelMemoria.setBackground(new java.awt.Color(52, 73, 85));
+        jPanelMemoria.setBackground(new java.awt.Color(214, 239, 216));
         jPanelMemoria.setForeground(new java.awt.Color(255, 255, 255));
 
         listRegistros2.setVisible(false);
@@ -360,17 +340,16 @@ public class main extends javax.swing.JFrame {
         });
 
         jLabel2.setFont(new java.awt.Font("Calibri", 0, 16)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Bus de Control");
         jLabel2.setAlignmentX(0.5F);
 
         jTFbControl.setEditable(false);
-        jTFbControl.setBackground(new java.awt.Color(0, 102, 0));
+        jTFbControl.setBackground(new java.awt.Color(80, 141, 78));
         jTFbControl.setFont(new java.awt.Font("Calibri", 0, 16)); // NOI18N
         jTFbControl.setForeground(new java.awt.Color(255, 255, 255));
 
         jTFbIntr.setEditable(false);
-        jTFbIntr.setBackground(new java.awt.Color(102, 0, 102));
+        jTFbIntr.setBackground(new java.awt.Color(233, 118, 43));
         jTFbIntr.setFont(new java.awt.Font("Calibri", 0, 16)); // NOI18N
         jTFbIntr.setForeground(new java.awt.Color(255, 255, 255));
         jTFbIntr.addActionListener(new java.awt.event.ActionListener() {
@@ -380,12 +359,10 @@ public class main extends javax.swing.JFrame {
         });
 
         jLabel3.setFont(new java.awt.Font("Calibri", 0, 16)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Bus de Instrucción");
         jLabel3.setAlignmentX(0.5F);
 
         jLabel1.setFont(new java.awt.Font("Calibri", 0, 16)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Bus de Datos");
 
         javax.swing.GroupLayout jPanelMemoriaLayout = new javax.swing.GroupLayout(jPanelMemoria);
@@ -395,17 +372,13 @@ public class main extends javax.swing.JFrame {
             .addGroup(jPanelMemoriaLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanelMemoriaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanelMemoriaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(jPanelMemoriaLayout.createSequentialGroup()
-                            .addGap(604, 604, 604)
-                            .addComponent(listRegistros2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                            .addGap(19, 19, 19))
-                        .addGroup(jPanelMemoriaLayout.createSequentialGroup()
-                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(jPanelMemoriaLayout.createSequentialGroup()
-                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(15, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGap(604, 604, 604)
+                        .addComponent(listRegistros2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                        .addGap(19, 19, 19))
+                    .addGroup(jPanelMemoriaLayout.createSequentialGroup()
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
             .addGroup(jPanelMemoriaLayout.createSequentialGroup()
                 .addGroup(jPanelMemoriaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanelMemoriaLayout.createSequentialGroup()
@@ -414,10 +387,18 @@ public class main extends javax.swing.JFrame {
                     .addGroup(jPanelMemoriaLayout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanelMemoriaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(jTFbControl, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 221, Short.MAX_VALUE)
-                        .addComponent(jTFbDatos, javax.swing.GroupLayout.Alignment.LEADING))
-                    .addComponent(jTFbIntr, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanelMemoriaLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jTFbDatos, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanelMemoriaLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jTFbControl, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanelMemoriaLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jTFbIntr, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanelMemoriaLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanelMemoriaLayout.setVerticalGroup(
@@ -425,29 +406,28 @@ public class main extends javax.swing.JFrame {
             .addGroup(jPanelMemoriaLayout.createSequentialGroup()
                 .addGap(24, 24, 24)
                 .addComponent(listRegistros2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                .addGap(22, 22, 22)
+                .addGap(29, 29, 29)
                 .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jTFbDatos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(62, 62, 62)
+                .addGap(26, 26, 26)
                 .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jTFbControl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE)
                 .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jTFbIntr, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(22, 22, 22)
+                .addGap(34, 34, 34)
                 .addComponent(filler3, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(36, 36, 36))
         );
 
-        jPanelCPU.setBackground(new java.awt.Color(129, 199, 132));
+        jPanelCPU.setBackground(new java.awt.Color(214, 239, 216));
 
         listRegistros1.setVisible(false);
 
         jLabel14.setFont(new java.awt.Font("Calibri", 0, 16)); // NOI18N
-        jLabel14.setForeground(new java.awt.Color(255, 255, 255));
         jLabel14.setText("Acumulador");
 
         jTFac.setEditable(false);
@@ -483,6 +463,9 @@ public class main extends javax.swing.JFrame {
             }
         });
 
+        jScrollPane2.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        jScrollPane2.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+
         JTARegistros.setEditable(false);
         JTARegistros.setBackground(new java.awt.Color(223, 227, 232));
         JTARegistros.setColumns(20);
@@ -493,11 +476,9 @@ public class main extends javax.swing.JFrame {
         jScrollPane2.setViewportView(JTARegistros);
 
         jLabel8.setFont(new java.awt.Font("Calibri", 0, 16)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("MBR");
 
         jLabel7.setFont(new java.awt.Font("Calibri", 0, 16)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("MAR");
 
         jTFpc.setEditable(false);
@@ -512,12 +493,13 @@ public class main extends javax.swing.JFrame {
         });
 
         jLabel4.setFont(new java.awt.Font("Calibri", 0, 16)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("PC");
 
         jLabel13.setFont(new java.awt.Font("Calibri", 0, 16)); // NOI18N
-        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
         jLabel13.setText("Banco de registros");
+
+        jScrollPane1.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        jScrollPane1.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
         jTAalu.setEditable(false);
         jTAalu.setBackground(new java.awt.Color(223, 227, 232));
@@ -528,7 +510,6 @@ public class main extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jTAalu);
 
         jLabel9.setFont(new java.awt.Font("Calibri", 0, 16)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("UC");
 
         jTFir.setEditable(false);
@@ -543,11 +524,9 @@ public class main extends javax.swing.JFrame {
         });
 
         jLabel6.setFont(new java.awt.Font("Calibri", 0, 16)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("IR");
 
         jLabel5.setFont(new java.awt.Font("Calibri", 0, 16)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("ALU");
 
         jTFuc.setEditable(false);
@@ -562,7 +541,6 @@ public class main extends javax.swing.JFrame {
         });
 
         jLabel20.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
-        jLabel20.setForeground(new java.awt.Color(255, 255, 255));
         jLabel20.setText("Procesador");
 
         javax.swing.GroupLayout jPanelCPULayout = new javax.swing.GroupLayout(jPanelCPU);
@@ -660,17 +638,18 @@ public class main extends javax.swing.JFrame {
                         .addGap(36, 36, 36))))
         );
 
-        jPanel1.setBackground(new java.awt.Color(131, 221, 240));
+        jPanel1.setBackground(new java.awt.Color(214, 239, 216));
 
         jLabel11.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.setText("Memoria principal:");
 
         jTFmemoria.setEditable(false);
         jTFmemoria.setColumns(20);
         jTFmemoria.setFont(new java.awt.Font("Calibri", 0, 16)); // NOI18N
         jTFmemoria.setRows(5);
+        jTFmemoria.setAutoscrolls(false);
         jScrollPane3.setViewportView(jTFmemoria);
+        jTFmemoria.getAccessibleContext().setAccessibleParent(null);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -693,97 +672,115 @@ public class main extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        jLabel21.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
+        jLabel21.setText("PROYECTO ARQUITECTURA DE COMPUTADORES");
+
+        jLabel16.setFont(new java.awt.Font("Calibri", 0, 16)); // NOI18N
+        jLabel16.setForeground(new java.awt.Color(214, 239, 216));
+        jLabel16.setText("Juan Pablo Cardona - Juan David Valencia - William Nicolas Ortiz");
+
         javax.swing.GroupLayout jPanelFondoLayout = new javax.swing.GroupLayout(jPanelFondo);
         jPanelFondo.setLayout(jPanelFondoLayout);
         jPanelFondoLayout.setHorizontalGroup(
             jPanelFondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelFondoLayout.createSequentialGroup()
+                .addGap(372, 372, 372)
+                .addComponent(listRegistros, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
                 .addGroup(jPanelFondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanelFondoLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(jPanelFondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanelFondoLayout.createSequentialGroup()
-                                .addGroup(jPanelFondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelFondoLayout.createSequentialGroup()
-                                        .addGap(0, 0, Short.MAX_VALUE)
-                                        .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 362, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(41, 41, 41))
-                                    .addGroup(jPanelFondoLayout.createSequentialGroup()
-                                        .addGap(362, 362, 362)
-                                        .addComponent(listRegistros, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                                        .addGap(595, 595, 595)))
-                                .addComponent(btnRestart, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(37, 37, 37)
-                                .addComponent(btnShowCodops)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
-                            .addGroup(jPanelFondoLayout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jLabel12)
-                                .addGap(641, 641, 641))))
+                        .addGap(182, 182, 182)
+                        .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 492, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanelFondoLayout.createSequentialGroup()
+                        .addGap(570, 570, 570)
                         .addGroup(jPanelFondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 362, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jPanelFondoLayout.createSequentialGroup()
-                                .addGap(33, 33, 33)
-                                .addGroup(jPanelFondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(btnStepByStep, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel15)
-                                    .addComponent(jLabel10)
-                                    .addComponent(jTFintrucComp, javax.swing.GroupLayout.PREFERRED_SIZE, 336, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(jPanelFondoLayout.createSequentialGroup()
-                                        .addComponent(jPanelCPU, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(jPanelMemoria, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                            .addGroup(jPanelFondoLayout.createSequentialGroup()
-                                .addGap(395, 395, 395)
-                                .addComponent(btnExe, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(87, 87, 87)))
-                .addComponent(filler1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(68, 68, 68))
+                                .addComponent(jLabel12)
+                                .addGap(446, 446, 446)
+                                .addComponent(filler1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(btnRestart, javax.swing.GroupLayout.PREFERRED_SIZE, 362, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap())
+            .addGroup(jPanelFondoLayout.createSequentialGroup()
+                .addGap(47, 47, 47)
+                .addComponent(jPanelCPU, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jPanelMemoria, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(144, 144, 144))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelFondoLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnShowCodops)
+                .addGap(114, 114, 114)
+                .addGroup(jPanelFondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel15)
+                    .addComponent(jTFintrucComp)
+                    .addComponent(btnExe, javax.swing.GroupLayout.PREFERRED_SIZE, 336, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(632, 632, 632))
+            .addGroup(jPanelFondoLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 546, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanelFondoLayout.setVerticalGroup(
             jPanelFondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelFondoLayout.createSequentialGroup()
                 .addGroup(jPanelFondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanelFondoLayout.createSequentialGroup()
-                        .addGap(12, 12, 12)
-                        .addComponent(jLabel12))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelFondoLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel15)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanelFondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanelFondoLayout.createSequentialGroup()
+                        .addGap(35, 35, 35)
                         .addComponent(listRegistros, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                        .addGap(95, 95, 95))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 35, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelFondoLayout.createSequentialGroup()
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel21)
+                        .addGap(18, 18, 18)))
+                .addGroup(jPanelFondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanelFondoLayout.createSequentialGroup()
                         .addGroup(jPanelFondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTFintrucComp, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jPanelCPU, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jPanelMemoria, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(38, 38, 38)
+                        .addGroup(jPanelFondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(filler1, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jPanelFondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(btnRestart, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(btnShowCodops, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(jPanelFondoLayout.createSequentialGroup()
-                        .addComponent(btnExe, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                                .addComponent(jLabel15)
+                                .addComponent(jLabel12)))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanelFondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanelFondoLayout.createSequentialGroup()
-                        .addGap(437, 437, 437)
-                        .addComponent(filler1, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnRestart, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btnShowCodops, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanelFondoLayout.createSequentialGroup()
-                        .addGap(5, 5, 5)
-                        .addComponent(jLabel10)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnStepByStep, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(61, 61, 61)
-                        .addGroup(jPanelFondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jPanelCPU, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jPanelMemoria, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                .addGap(117, 117, 117))
+                        .addComponent(jTFintrucComp, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnExe, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(37, 37, 37)
+                .addComponent(jLabel16)
+                .addGap(48, 48, 48))
         );
+
+        btnStepByStep.setBackground(new java.awt.Color(13, 110, 253));
+        btnStepByStep.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
+        btnStepByStep.setForeground(new java.awt.Color(255, 255, 255));
+        btnStepByStep.setText("Paso a Paso");
+        btnStepByStep.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnStepByStepMouseClicked(evt);
+            }
+        });
+        btnStepByStep.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnStepByStepActionPerformed(evt);
+            }
+        });
+
+        jLabel10.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel10.setText("Captación:");
+        jLabel10.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -793,7 +790,13 @@ public class main extends javax.swing.JFrame {
                 .addGap(204, 204, 204)
                 .addComponent(jPanelGeneral, javax.swing.GroupLayout.PREFERRED_SIZE, 876, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addComponent(jPanelFondo, javax.swing.GroupLayout.DEFAULT_SIZE, 1346, Short.MAX_VALUE)
+            .addComponent(jPanelFondo, javax.swing.GroupLayout.DEFAULT_SIZE, 1481, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel10)
+                .addGap(42, 42, 42)
+                .addComponent(btnStepByStep, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(130, 130, 130))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -801,7 +804,11 @@ public class main extends javax.swing.JFrame {
                 .addComponent(jPanelFondo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanelGeneral, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 651, Short.MAX_VALUE))
+                .addGap(117, 117, 117)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnStepByStep, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel10))
+                .addGap(0, 489, Short.MAX_VALUE))
         );
 
         pack();
@@ -1152,137 +1159,6 @@ public class main extends javax.swing.JFrame {
         aux = 1;
     }//GEN-LAST:event_btnRestartActionPerformed
 
-    private void btnStepByStepActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnStepByStepActionPerformed
-
-        switch (aux) {
-            case 1:
-                // TODO add your handling code here:
-
-                String dir = jTFintrucComp.getText();
-
-                
-
-                ciclo += 1;
-
-                //String[] fullinst;
-                //fullinst = jTFintrucComp.getText().split("/n");
-                codop = "";
-                for (int i = 0; i < 4; i++) {
-                    String a = String.valueOf(dir.charAt(i));
-                    codop += a;
-                    //codop.concat(a);
-                }
-                inst1 = "";
-                for (int i = 4; i > 3 & i < 10; i++) {
-                    String b = String.valueOf(dir.charAt(i));
-                    inst1 += b;
-                    //inst1.concat(b);
-                }
-                inst2 = "";
-                for (int i = 10; i > 9 & i < 16; i++) {
-                    String c = String.valueOf(dir.charAt(i));
-                    inst2 += c;
-                    //inst2.concat(c);
-                }
-
-                try {
-                    captacion1(inst1, inst2, ciclo);
-                } catch (InterruptedException ex) {
-                    Logger.getLogger(main.class.getName()).log(Level.SEVERE, null, ex);
-                }
-                aux = aux + 1;
-                System.out.println("Arq aux: " + aux);
-                break;
-
-            case 2:
-                 try {
-                captacion2(inst1, inst2, ciclo);
-            } catch (InterruptedException ex) {
-                Logger.getLogger(main.class.getName()).log(Level.SEVERE, null, ex);
-            }
-            aux = aux + 1;
-            System.out.println("Arq aux: " + aux);
-            break;
-            case 3:
-                try {
-                captacion3(inst1, inst2, ciclo);
-            } catch (InterruptedException ex) {
-                Logger.getLogger(main.class.getName()).log(Level.SEVERE, null, ex);
-            }
-            aux = aux + 1;
-            System.out.println("Arq aux: " + aux);
-            break;
-            case 4:
-                try {
-                    dir = jTFintrucComp.getText();
-                    captacion4(inst1, inst2, ciclo, dir);
-            } catch (InterruptedException ex) {
-                Logger.getLogger(main.class.getName()).log(Level.SEVERE, null, ex);
-            }
-            aux = aux + 1;
-            System.out.println("Arq aux: " + aux);
-            break;
-            case 5:
-                try {
-                    captacion5(inst1, inst2, ciclo);
-            } catch (InterruptedException ex) {
-                Logger.getLogger(main.class.getName()).log(Level.SEVERE, null, ex);
-            }
-            aux = aux + 1;
-            System.out.println("Arq aux: " + aux);
-            break;
-            case 6:
-                try {
-                captacion6(inst1, inst2, ciclo);
-            } catch (InterruptedException ex) {
-                Logger.getLogger(main.class.getName()).log(Level.SEVERE, null, ex);
-            }
-            aux = aux + 1;
-            System.out.println("Arq aux: " + aux);
-            break;
-            case 7:
-                try {
-                captacion7(inst1, inst2, ciclo);
-            } catch (InterruptedException ex) {
-                Logger.getLogger(main.class.getName()).log(Level.SEVERE, null, ex);
-            }
-            aux = aux + 1;
-            System.out.println("Arq aux: " + aux);
-            break;
-            case 8:
-                try {
-                captacion8(inst1, inst2, ciclo);
-            } catch (InterruptedException ex) {
-                Logger.getLogger(main.class.getName()).log(Level.SEVERE, null, ex);
-            }
-            aux = aux + 1;
-            System.out.println("Arq aux: " + aux);
-            break;
-            case 9:
-                dir = jTFintrucComp.getText();
-                captacion9(inst1, inst2, ciclo, dir);
-
-                JFrame fr = new JFrame(" Fin captación");
-                //fr.setAlwaysOnTop(true);
-
-                if (ciclo == 2) {
-                    jTFintrucComp.setText("");
-                    ciclo = 0;
-                }
-
-                aux = 1;
-                System.out.println("Arq aux: " + aux);
-                break;
-            default:
-                throw new AssertionError();
-        }
-
-    }//GEN-LAST:event_btnStepByStepActionPerformed
-
-    private void btnStepByStepMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnStepByStepMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnStepByStepMouseClicked
-
     private void jTFucActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTFucActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTFucActionPerformed
@@ -1294,6 +1170,134 @@ public class main extends javax.swing.JFrame {
     private void jTFbDatosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTFbDatosActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTFbDatosActionPerformed
+
+    private void btnStepByStepActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnStepByStepActionPerformed
+
+        switch (aux) {
+            case 1:
+            // TODO add your handling code here:
+
+            String dir = jTFintrucComp.getText();
+
+            ciclo += 1;
+
+            //String[] fullinst;
+            //fullinst = jTFintrucComp.getText().split("/n");
+            codop = "";
+            for (int i = 0; i < 4; i++) {
+                String a = String.valueOf(dir.charAt(i));
+                codop += a;
+                //codop.concat(a);
+            }
+            inst1 = "";
+            for (int i = 4; i > 3 & i < 10; i++) {
+                String b = String.valueOf(dir.charAt(i));
+                inst1 += b;
+                //inst1.concat(b);
+            }
+            inst2 = "";
+            for (int i = 10; i > 9 & i < 16; i++) {
+                String c = String.valueOf(dir.charAt(i));
+                inst2 += c;
+                //inst2.concat(c);
+            }
+
+            try {
+                captacion1(inst1, inst2, ciclo);
+            } catch (InterruptedException ex) {
+                Logger.getLogger(main.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            aux = aux + 1;
+            System.out.println("Arq aux: " + aux);
+            break;
+
+            case 2:
+            try {
+                captacion2(inst1, inst2, ciclo);
+            } catch (InterruptedException ex) {
+                Logger.getLogger(main.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            aux = aux + 1;
+            System.out.println("Arq aux: " + aux);
+            break;
+            case 3:
+            try {
+                captacion3(inst1, inst2, ciclo);
+            } catch (InterruptedException ex) {
+                Logger.getLogger(main.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            aux = aux + 1;
+            System.out.println("Arq aux: " + aux);
+            break;
+            case 4:
+            try {
+                dir = jTFintrucComp.getText();
+                captacion4(inst1, inst2, ciclo, dir);
+            } catch (InterruptedException ex) {
+                Logger.getLogger(main.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            aux = aux + 1;
+            System.out.println("Arq aux: " + aux);
+            break;
+            case 5:
+            try {
+                captacion5(inst1, inst2, ciclo);
+            } catch (InterruptedException ex) {
+                Logger.getLogger(main.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            aux = aux + 1;
+            System.out.println("Arq aux: " + aux);
+            break;
+            case 6:
+            try {
+                captacion6(inst1, inst2, ciclo);
+            } catch (InterruptedException ex) {
+                Logger.getLogger(main.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            aux = aux + 1;
+            System.out.println("Arq aux: " + aux);
+            break;
+            case 7:
+            try {
+                captacion7(inst1, inst2, ciclo);
+            } catch (InterruptedException ex) {
+                Logger.getLogger(main.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            aux = aux + 1;
+            System.out.println("Arq aux: " + aux);
+            break;
+            case 8:
+            try {
+                captacion8(inst1, inst2, ciclo);
+            } catch (InterruptedException ex) {
+                Logger.getLogger(main.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            aux = aux + 1;
+            System.out.println("Arq aux: " + aux);
+            break;
+            case 9:
+            dir = jTFintrucComp.getText();
+            captacion9(inst1, inst2, ciclo, dir);
+
+            JFrame fr = new JFrame(" Fin captación");
+            //fr.setAlwaysOnTop(true);
+
+            if (ciclo == 2) {
+                jTFintrucComp.setText("");
+                ciclo = 0;
+            }
+
+            aux = 1;
+            System.out.println("Arq aux: " + aux);
+            break;
+            default:
+            throw new AssertionError();
+        }
+    }//GEN-LAST:event_btnStepByStepActionPerformed
+
+    private void btnStepByStepMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnStepByStepMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnStepByStepMouseClicked
 
     /**
      * @param args the command line arguments
@@ -1342,7 +1346,6 @@ public class main extends javax.swing.JFrame {
     private javax.swing.Box.Filler filler1;
     private javax.swing.Box.Filler filler2;
     private javax.swing.Box.Filler filler3;
-    private javax.swing.Box.Filler filler4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -1351,11 +1354,9 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -1366,34 +1367,27 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     public static javax.swing.JPanel jPanelCPU;
     public static javax.swing.JPanel jPanelFondo;
-    private javax.swing.JPanel jPanelGeneral;
+    public static javax.swing.JPanel jPanelGeneral;
     public static javax.swing.JPanel jPanelMemoria;
-    private javax.swing.JPanel jPanelMemoria1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
-    private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JTextArea jTAalu;
     private javax.swing.JTextField jTFac;
     private javax.swing.JTextField jTFbControl;
-    private javax.swing.JTextField jTFbControl1;
     private javax.swing.JTextField jTFbDatos;
-    private javax.swing.JTextField jTFbDatos1;
     private javax.swing.JTextField jTFbIntr;
-    private javax.swing.JTextField jTFbIntr1;
     private javax.swing.JTextField jTFintrucComp;
     private javax.swing.JTextField jTFir;
     private javax.swing.JTextField jTFmar;
     private javax.swing.JTextField jTFmbr;
     private javax.swing.JTextArea jTFmemoria;
-    private javax.swing.JTextArea jTFmemoria1;
     private javax.swing.JTextField jTFpc;
     private javax.swing.JTextField jTFuc;
     private java.awt.List listRegistros;
     private java.awt.List listRegistros1;
     private java.awt.List listRegistros2;
-    private java.awt.List listRegistros3;
     private javax.swing.JTextArea txtResult;
     // End of variables declaration//GEN-END:variables
 
