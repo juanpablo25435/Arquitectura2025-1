@@ -816,7 +816,7 @@ public class main extends javax.swing.JFrame {
    
     private void btnExeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExeActionPerformed
         
-        /* String dir = jTFintrucComp.getText();
+        String dir = jTFintrucComp.getText();
         if (dir == null || dir.isEmpty()) {
             JOptionPane.showMessageDialog(this, "La entrada no puede estar vacía", "INVALID ENTRY",
                     JOptionPane.INFORMATION_MESSAGE);
@@ -831,7 +831,7 @@ public class main extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(this, "La entrada no puede ser menor a 16 bits", "INVALID ENTRY",
                     JOptionPane.INFORMATION_MESSAGE);
             return;
-        } */
+        }
         
         SwingWorker<Void, Void> worker = new SwingWorker<Void, Void>() {
             @Override
@@ -1160,34 +1160,7 @@ public class main extends javax.swing.JFrame {
 
                 String dir = jTFintrucComp.getText();
 
-                if (dir.equals("") | dir.length() == 0) {
-                    JFrame fram = new JFrame("Entrada nula");
-                    fram.setAlwaysOnTop(true);
-                    dir = dir.valueOf(JOptionPane.showInputDialog(fram,
-                            "La entrada no puede estar vacia", "INVALID ENTRY", JOptionPane.INFORMATION_MESSAGE));
-                    jTFintrucComp.setText(dir);
-                    if (dir.equals("") | dir.length() == 0) {
-                        break;
-                    }
-                }
-
-                if (dir.length() > 16) {
-                    JFrame frame = new JFrame("Es mayor a 16");
-                    frame.setAlwaysOnTop(true);
-                    dir = dir.valueOf(JOptionPane.showInputDialog(frame,
-                            "La entrada no puede ser mayor a 16", "INVALID ENTRY", JOptionPane.INFORMATION_MESSAGE));
-                    jTFintrucComp.setText(dir);
-                    // b16=true;
-                }
                 
-                if (dir.length() < 16 & !dir.equals("")) {
-                    JFrame frames = new JFrame("Es menor a 16 bits");
-                    frames.setAlwaysOnTop(true);
-                    dir = dir.valueOf(JOptionPane.showInputDialog(frames,
-                            "La entrada no puede ser menor a 16 bits", "INVALID ENTRY", JOptionPane.INFORMATION_MESSAGE));
-                    jTFintrucComp.setText(dir);
-                    //bm16=true;
-                }
 
                 ciclo += 1;
 
