@@ -815,6 +815,24 @@ public class main extends javax.swing.JFrame {
     }//GEN-LAST:event_btnShowCodopsActionPerformed
    
     private void btnExeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExeActionPerformed
+        
+        /* String dir = jTFintrucComp.getText();
+        if (dir == null || dir.isEmpty()) {
+            JOptionPane.showMessageDialog(this, "La entrada no puede estar vacía", "INVALID ENTRY",
+                    JOptionPane.INFORMATION_MESSAGE);
+            return;
+        }
+        if (dir.length() > 16) {
+            JOptionPane.showMessageDialog(this, "La entrada no puede ser mayor a 16 bits", "INVALID ENTRY",
+                    JOptionPane.INFORMATION_MESSAGE);
+            return;
+        }
+        if (dir.length() < 16) {
+            JOptionPane.showMessageDialog(this, "La entrada no puede ser menor a 16 bits", "INVALID ENTRY",
+                    JOptionPane.INFORMATION_MESSAGE);
+            return;
+        } */
+        
         SwingWorker<Void, Void> worker = new SwingWorker<Void, Void>() {
             @Override
             protected Void doInBackground() throws Exception {
@@ -1142,7 +1160,7 @@ public class main extends javax.swing.JFrame {
 
                 String dir = jTFintrucComp.getText();
 
-                while (dir.equals("") | dir.length() == 0) {
+                if (dir.equals("") | dir.length() == 0) {
                     JFrame fram = new JFrame("Entrada nula");
                     fram.setAlwaysOnTop(true);
                     dir = dir.valueOf(JOptionPane.showInputDialog(fram,
